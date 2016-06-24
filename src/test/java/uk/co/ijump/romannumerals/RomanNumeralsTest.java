@@ -47,8 +47,14 @@ public class RomanNumeralsTest {
 	@Test
 	public void TestSeven() {
 		String result = RomanNumerals.ConvertToNumeral(7);
-		assertEquals(result, "VI");
+		assertEquals(result, "VII");
 	}
+
+    @Test
+    public void TestEight() {
+        String result = RomanNumerals.ConvertToNumeral(8);
+        assertEquals(result, "VIII");
+    }
 
 }
 
