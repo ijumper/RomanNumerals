@@ -44,5 +44,11 @@ public class RomanNumeralsTest {
 		assertEquals(result, "VI");
 	}
 
+	@Test
+	public void TestSeven() {
+		String result = RomanNumerals.ConvertToNumeral(7);
+		assertEquals(result, "VI");
+	}
+
 }
 
