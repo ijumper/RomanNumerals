@@ -56,5 +56,11 @@ public class RomanNumeralsTest {
         assertEquals(result, "VIII");
     }
 
+    @Test
+    public void TestNine() {
+        String result = RomanNumerals.ConvertToNumeral(8);
+        assertEquals(result, "VIII");
+    }
+
 }
 
