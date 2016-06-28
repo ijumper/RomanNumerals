@@ -58,9 +58,33 @@ public class RomanNumeralsTest {
 
     @Test
     public void TestNine() {
-        String result = RomanNumerals.ConvertToNumeral(8);
-        assertEquals(result, "VIII");
+        String result = RomanNumerals.ConvertToNumeral(9);
+        assertEquals(result, "IX");
     }
+
+	@Test
+	public void TestTen() {
+		String result = RomanNumerals.ConvertToNumeral(10);
+		assertEquals(result, "X");
+	}
+
+	@Test
+	public void TestEleven() {
+		String result = RomanNumerals.ConvertToNumeral(11);
+		assertEquals(result, "XI");
+	}
+
+	@Test
+	public void TestTwelve() {
+		String result = RomanNumerals.ConvertToNumeral(12);
+		assertEquals(result, "XII");
+	}
+
+	@Test
+	public void TestThirteen() {
+		String result = RomanNumerals.ConvertToNumeral(13);
+		assertEquals(result, "XIII");
+	}
 
 }
 
