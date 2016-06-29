@@ -103,5 +103,23 @@ public class RomanNumeralsTest {
 		String result = RomanNumerals.ConvertToNumeral(16);
 		assertEquals(result, "XVI");
 	}
+
+	@Test
+	public void TestSeventeen() {
+		String result = RomanNumerals.ConvertToNumeral(17);
+		assertEquals(result, "XVII");
+	}
+
+	@Test
+	public void TestEighteen() {
+		String result = RomanNumerals.ConvertToNumeral(18);
+		assertEquals(result, "XVIII");
+	}
+
+	@Test
+	public void NineEighteen() {
+		String result = RomanNumerals.ConvertToNumeral(19);
+		assertEquals(result, "XIX");
+	}
 }
 
