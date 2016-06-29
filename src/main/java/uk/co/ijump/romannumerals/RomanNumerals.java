@@ -52,7 +52,7 @@ public class RomanNumerals {
                     numeral = numeral + "I";
                 }
             } else {
-                ConvertIntegersGreaterThanThirteenToNumeral(Number);
+                numeral = ConvertIntegersGreaterThanThirteenToNumeral(Number);
             }
         }
 
@@ -61,7 +61,30 @@ public class RomanNumerals {
     }
 
     private static String ConvertIntegersGreaterThanThirteenToNumeral(int Number) {
-        return "stinrer";
+
+        String numeralPrefix = "X";
+        String numeral = null;
+        String numeralSuffix = "V";
+
+        if (Number < 15) {
+            numeral = numeralPrefix + "I" + numeralSuffix;
+        } else if (Number > 5) {
+
+            if (Number > 18 ) {
+                numeral = ConvertIntegersGreaterThanEightTeenToNumeral(Number);
+            } else {
+                numeral = numeralPrefix + numeralSuffix;
+                for (int i = 15; i < Number; i++) {
+                    numeral = numeral + "I";
+                }
+            }
+        }
+
+        return numeral;
+    }
+
+    private static String ConvertIntegersGreaterThanEightTeenToNumeral(int Number) {
+        return "something";
     }
 
 }

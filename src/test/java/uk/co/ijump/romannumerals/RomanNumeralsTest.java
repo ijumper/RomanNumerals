@@ -86,5 +86,22 @@ public class RomanNumeralsTest {
 		assertEquals(result, "XIII");
 	}
 
+	@Test
+	public void TestFourteen() {
+		String result = RomanNumerals.ConvertToNumeral(14);
+		assertEquals(result, "XIV");
+	}
+
+	@Test
+	public void TestFifteen () {
+		String result = RomanNumerals.ConvertToNumeral(15);
+		assertEquals(result, "XV");
+	}
+
+	@Test
+	public void TestSixteen() {
+		String result = RomanNumerals.ConvertToNumeral(16);
+		assertEquals(result, "XVI");
+	}
 }
 
